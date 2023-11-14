@@ -1,0 +1,49 @@
+Referencias: 
+              https://www.youtube.com/watch?v=MWSP6PGHAb4  (Vue 3 - Vuetify 3)
+              https://www.youtube.com/playlist?list=PLnfMiP0v59hC-A9ZETajdNk8cfqHFACqA  (Vue 2 - Vuetify 2)
+              https://codesandbox.io/s/vuetify-top-navbar-frhu8   (Simulador online)
+
+1. Tener instalado Nodejs
+2. Tener instalado VSCode, instalar extension npm install volar-service-vetur
+3. Instalar VUE : npm install -g @vue/cli     npm create vue@latest   
+   Usando directamente vuetify: npm create vuetify
+4. Crear un Folder de trabajo Raiz y abrir esta carpta con VSCode
+
+5. Crear un proyecto con el framwork base VUE, desde la terminal de VSCode
+   npm create vue@latest o con entorno grafico: vue ui
+   - Dar nombre al proyecto, con este nombre de proyecto se crea una nueva carpeta
+   - Vue Router "Y" solo esta opcion en Y
+   - Cambiarse al directorio del proyecto
+   - npm install
+   - npm run dev
+
+6. Enlazar VUE 3 con VUETIFY 3
+   npm install vuetify
+   - modificar main.js
+     debe quedar similar a:
+
+     import { createApp } from 'vue'
+     import App from './App.vue'
+     import router from './router'
+
+     const app = createApp(App)
+     // Vuetify
+     import '@mdi/font/css/materialdesignicons.css'
+     import { createVuetify } from 'vuetify'
+     import * as components from 'vuetify/components'
+     import * as directives from 'vuetify/directives'
+     import 'vuetify/styles'
+
+     const vuetify = createVuetify({
+       components,
+       directives,
+     })
+
+     app.use(router)
+     app.use(vuetify)
+     app.mount('#app')
+     
+
+Tercero instalar los iconos de materia design
+7. npm install @mdi/font -D
+8. npm run dev/serve  ejecutar servidor

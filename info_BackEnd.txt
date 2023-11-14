@@ -1,0 +1,15 @@
+1. Instalar NodeJs
+2. Instalar VSCode
+3. npm init -y  // crea el paquete json package.json con estructura default
+4. Instalar los paquetes:
+   - express para gestion del servidor
+   - mysql2  para gestion del motor  de base de datos
+   - sequelize ORM para gestion de instrucciones SQL 
+   - body-parser para gestion de peticiones POST, URLs   
+   - nodemon para autoreiniciar node al detectar cambios en el codigo
+   npm install express body-parser sequelize mysql2 nodemon
+5. creamos el archivo index.js en la raiz
+6. creamos el archivo db.js
+
+//Cómo usar JWT con NodeJS (Express) y Passport.JS 
+https://www.youtube.com/watch?v=EcCIlxfxc4g
